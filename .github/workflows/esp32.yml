@@ -63,5 +63,8 @@ jobs:
         run: arduino-cli compile -v --fqbn ${{ matrix.fqbn }} ./Blink --output-dir bin
       - name: Archive code coverage results
         uses: actions/upload-artifact@v4
+        with:
+          path: /tmp/arduino/sketches/76911E5E89DDB1C7DB4EA4A160FC3512/
+          
 
         
