@@ -34,6 +34,9 @@ jobs:
           # the variable `fqbn` is set to "arduino:avr:uno".
           - arduino-platform: "arduino:avr"
             fqbn: "arduino:avr:uno"
+            platforms: |
+            - name: esp32:esp32
+              source-url: https://dl.espressif.com/dl/package_esp32_index.json
 
     # This is the platform GitHub will use to run our workflow,
     # I picked ubuntu.
