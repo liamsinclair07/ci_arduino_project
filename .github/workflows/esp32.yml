@@ -61,4 +61,9 @@ jobs:
       # in the build matrix.
       - name: Compile Sketch
         run: arduino-cli compile -v --fqbn ${{ matrix.fqbn }} ./Blink --output-dir bin
+      - name: Archive code coverage results
+        uses: actions/upload-artifact@v4
+        with:
+          name: code-coverage-report
+          path: bin
         
