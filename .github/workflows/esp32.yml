@@ -65,7 +65,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: Blink.ino.bin
-          path: /tmp/arduino/sketches/76911E5E89DDB1C7DB4EA4A160FC3512/
+          path: bin
           
 
         
